@@ -28,7 +28,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DESCRIPTION A custom keyboard
 
 /* key matrix size */
-#define MATRIX_ROWS 8
+#define MATRIX_ROWS 7
 #define MATRIX_COLS 12
 
 /*
@@ -41,12 +41,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *                  ROW2COL = ROW = Anode (+), COL = Cathode (-, marked on diode)
  *
  */
-#define MATRIX_ROW_PINS { D0, D1, D3, D4, D5, D6, D2, D7 }
-#define MATRIX_COL_PINS { F1, F0, F2, F3, F4, F5, F6, F7, B3, B6, B1, B2 }
+//                        R0  R1  R2  R3  R4  R5  R6
+#define MATRIX_ROW_PINS { C7, C6, D4, D3, D2, D1, D0 }
+//                        C0  C1  C2  C3  C4  C5  C6  C7  C8  C9  C10 C11
+#define MATRIX_COL_PINS { D7, B4, B5, F5, D5, B7, B3, F0, F1, F6, B6, F7 }
 #define UNUSED_PINS
 
 /* COL2ROW, ROW2COL*/
-#define DIODE_DIRECTION COL2ROW
+#define DIODE_DIRECTION ROW2COL
 
 
 
@@ -165,5 +167,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /* Bootmagic Lite key configuration */
 // use "quit" key
-#define BOOTMAGIC_LITE_ROW 6
+#define BOOTMAGIC_LITE_ROW 5
 #define BOOTMAGIC_LITE_COLUMN 10

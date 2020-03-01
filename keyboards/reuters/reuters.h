@@ -22,8 +22,7 @@
 	  k76,      k77, k78, k79,      k710    \
 ) \
 { \
-    { k00, ___, ___, ___, ___, ___, ___, ___, ___, ___, ___, ___ }, \
-	{ ___, k11, k12, k13, k14, ___, ___, ___, ___, ___, ___, ___ }, \
+	{ k00, k11, k12, k13, k14, ___, ___, ___, ___, ___, ___, ___ }, \
 	{ ___, k21, k22, k23, ___, ___, ___, ___, ___, ___, ___, ___ }, \
 	{ k30, k31, k32, k33, k34, ___, ___, ___, ___, ___, ___, ___ }, \
     { ___, ___, ___, ___, ___, k45, k46, k47, k48, k49, k410, k411 }, \
@@ -38,14 +37,13 @@ This is the matrix
 Along with the pins for each row and column
              P??   P??  P??  P?? P??   P?? P?? P?? P?? P?? P??  P??
              kx0   kx1  kx2  kx3 kx4   kx5 kx6 kx7 kx8 kx9 kx10 kx11
-P?? k0x Row: YOURS --   --   --  --    --  --  --  --  --  --   --  
-P?? k1x Row: --    F7   F8   F9  MINE  --  --  --  --  --  --   --     
-P?? k2x Row: --    F10  F11  F12 --    --  --  --  --  --  --   --   
-P?? k3x Row: BID   HOLD DEAL REL OFFER --  --  --  --  --  --   --   
-P?? k4x Row: --    --   --   --  --    UP  DN  7   8   9   LEND REND
-P?? k5x Row: --    --   --   --  --    L   R   4   5   6   CHGP SPCE
-P?? k6x Row: --    --   --   --  --    --  CXI 1   2   3   QUIT MENU
-P?? k7x Row: --    --   --   --  --    --  CXA 0   .   DEL TXR  --
+P?? k0x Row: YOURS F7   F8   F9  MINE  --  --  --  --  --  --   --     
+P?? k1x Row: --    F10  F11  F12 --    --  --  --  --  --  --   --   
+P?? k2x Row: BID   HOLD DEAL REL OFFER --  --  --  --  --  --   --   
+P?? k3x Row: --    --   --   --  --    UP  DN  7   8   9   LEND REND
+P?? k4x Row: --    --   --   --  --    L   R   4   5   6   CHGP SPCE
+P?? k5x Row: --    --   --   --  --    --  CXI 1   2   3   QUIT MENU
+P?? k6x Row: --    --   --   --  --    --  CXA 0   .   DEL TXR  --
 
 LEND = Left end
 REND = Right end
