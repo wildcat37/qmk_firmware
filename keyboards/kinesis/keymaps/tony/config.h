@@ -1,4 +1,6 @@
 #pragma once
 
 // place overrides here
-#define LEADER_TIMEOUT 300
+#define PERMISSIVE_HOLD
+
+#define TAPPING_TERM 150
