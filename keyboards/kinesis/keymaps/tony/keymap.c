@@ -55,11 +55,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
            KC_PGDN,KC_ENTER ,KC_SPC
     ),
 	
-//uses C-A-F13 to C-A-F15
 [L1] = LAYOUT(
            KC_TRNS, KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS,
-           KC_TRNS, KC_F1  ,KC_F2  ,KC_F3,  KC_F4  ,KC_F5   ,
-           KC_TRNS, KC_F6   ,KC_F7   ,KC_F8   ,KC_F9   ,KC_F10   ,
+           KC_TRNS, KC_TRNS  ,KC_TRNS  ,KC_TRNS,  KC_TRNS  ,KC_TRNS   ,
+           KC_TRNS, KC_INT1   ,KC_INT2   ,KC_INT3   ,KC_INT4   ,KC_INT5   ,
            KC_TRNS,KC_TRNS   ,KC_TRNS   ,KC_TRNS   ,KC_TRNS   ,KC_TRNS   ,
            KC_TRNS,LCA(KC_F13)   ,LCA(KC_F14),LCA(KC_F15)   ,KC_TRNS   ,KC_TRNS   ,
                    KC_TRNS ,KC_TRNS ,KC_TRNS,KC_TRNS,
