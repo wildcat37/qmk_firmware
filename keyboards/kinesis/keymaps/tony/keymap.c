@@ -58,7 +58,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [L1] = LAYOUT(
            KC_TRNS, KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS  ,KC_TRNS,
            KC_TRNS, KC_TRNS  ,KC_TRNS  ,KC_TRNS,  KC_TRNS  ,KC_TRNS   ,
-           KC_TRNS, KC_INT1   ,KC_INT2   ,KC_INT3   ,KC_INT4   ,KC_INT5   ,
+           KC_TRNS, LCA(KC_F16)   ,LCA(KC_F17)   ,LCA(KC_F18)   ,LCA(KC_F19)   ,LCA(KC_F20)   ,
            KC_TRNS,KC_TRNS   ,KC_TRNS   ,KC_TRNS   ,KC_TRNS   ,KC_TRNS   ,
            KC_TRNS,LCA(KC_F13)   ,LCA(KC_F14),LCA(KC_F15)   ,KC_TRNS   ,KC_TRNS   ,
                    KC_TRNS ,KC_TRNS ,KC_TRNS,KC_TRNS,
