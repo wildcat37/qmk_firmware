@@ -79,10 +79,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
               LCTL(KC_F1),        LCTL(KC_F2), LCTL(KC_F3), LCTL(KC_F4),       LCTL(KC_F5),
 	                              LCTL(KC_F6), LCTL(KC_F7), LCTL(KC_F8),               
 	          LCTL(KC_F9),        LCTL(KC_F10), LCTL(KC_F11), LCTL(KC_F12),    LCA(KC_F1),    
-	  LCA(KC_F2),  LCA(KC_F3),     KC_7,          KC_8,          KC_9,    LCA(KC_F4), LCA(KC_F5), 
-	  LCA(KC_F6),  LCA(KC_F7),     KC_4,          KC_5,          KC_6,    LCA(KC_F8), LCA(KC_F9), 
-	  LCA(KC_F10),                 KC_1,          KC_2,          KC_3,    TO(_BASE),  LCA(KC_F11), 
-	  LCA(KC_F12),                 KC_0,          KC_BSPC,       KC_DOT,      MEH(KC_F1)     
+	  LCA(KC_F2),  LCA(KC_F3),     MEH(KC_F1),          MEH(KC_F2),          MEH(KC_F3),    LCA(KC_F4), LCA(KC_F5), 
+	  LCA(KC_F6),  LCA(KC_F7),     MEH(KC_F4),          MEH(KC_F5),          MEH(KC_F6),    LCA(KC_F8), LCA(KC_F9), 
+	  LCA(KC_F10),                 MEH(KC_F7),          MEH(KC_F8),          MEH(KC_F9),    TO(_BASE),  LCA(KC_F11), 
+	  LCA(KC_F12),                 MEH(KC_F10),          MEH(KC_F11),       MEH(KC_F12),      LALT(KC_F1)     
 	)
 };
 
