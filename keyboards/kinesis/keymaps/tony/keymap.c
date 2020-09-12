@@ -4,6 +4,7 @@
 #define L1 1 // 
 #define L2 2 // 
 #define L3 3 // progm layer
+#define STENO 4 
 
 #define TAPPING_TOGGLE 10 //basically turn it off
 
@@ -44,7 +45,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 			   KC_LCTL,KC_LALT,
                                     LT(L1,KC_HOME),
                            KC_BSPC,KC_DEL ,LT(L2,KC_END) ,
-    KC_F9  ,KC_F10 ,KC_F11 ,KC_F12 ,KC_MUTE  ,KC_VOLD, KC_VOLU, KC_1, MO(L3),
+    KC_F9  ,KC_F10 ,KC_F11 ,KC_F12 ,KC_MUTE  ,KC_VOLD, KC_VOLU, MO(STENO), MO(L3),
 	KC_6   ,KC_7   ,KC_8   ,KC_9   ,KC_0   ,KC_MINS,
 	KC_Y   ,KC_U   ,KC_I   ,KC_O   ,KC_P   ,KC_BSLS,
 	KC_H   ,KC_J   ,KC_K   ,KC_L   ,KC_SCLN,KC_QUOT,
@@ -116,8 +117,33 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
            KC_NO,KC_NO,
            KC_NO,
            KC_NO,KC_NO ,KC_NO
+    ),
+	
+[STENO] = LAYOUT(
+           KC_NO, KC_NO  ,KC_NO  ,KC_NO  ,KC_NO  ,KC_NO  ,KC_NO  ,KC_NO  ,KC_NO,
+           KC_NO, KC_NO  ,KC_NO  ,KC_NO,  KC_NO  ,KC_NO   ,
+           KC_NO, KC_Q   ,KC_W   ,KC_E   ,KC_R   ,KC_NO   ,
+           KC_NO, KC_A   ,KC_S   ,KC_D   ,KC_F   ,KC_NO   ,
+           KC_NO,KC_NO   ,KC_NO   ,KC_NO   ,KC_NO   ,KC_NO   ,
+                   KC_NO ,KC_NO ,KC_NO,KC_NO,
+			   KC_NO,KC_NO,
+                                    KC_NO,
+                           KC_C ,KC_V ,MO(QWERTY) ,
+    KC_NO  ,KC_NO ,KC_NO ,KC_NO ,KC_NO  ,KC_NO, KC_NO, MO(QWERTY), KC_NO,
+	KC_NO   ,KC_NO   ,KC_NO   ,KC_NO   ,KC_NO   ,KC_NO,
+	KC_Y   ,KC_U   ,KC_I   ,KC_O   ,KC_P   ,KC_LBRC,
+	KC_H   ,KC_J   ,KC_K   ,KC_L   ,KC_SCLN,KC_QUOT,
+	KC_NO   ,KC_NO   ,KC_NO,KC_NO ,KC_NO,KC_NO,
+		KC_NO  ,KC_NO,KC_NO,KC_NO,
+           KC_NO,KC_NO,
+           KC_NO,
+           KC_NO,KC_N  ,KC_M
     )	
+	
+
 };
+
+
 
 void matrix_init_user(void) {
 
